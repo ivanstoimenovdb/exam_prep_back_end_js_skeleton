@@ -1,15 +1,16 @@
 import { Router } from "express";
 import { userService } from "../services/index.js";
+import { isAuth, isGuest } from "../middlewares/authMiddlewares.js";
 
 const userController = Router();
 
-userController.get('/register', (req, res) => {
+userController.get('/register', isGuest,(req, res) => {
     res.render('users/register');
 
     
 })
 
-userController.post('/register', async (req, res) => {
+userController.post('/register', isGuest,async (req, res) => {
     const { email, password } = req.body;
     
     const token = await userService.register(email, password);
@@ -19,11 +20,11 @@ userController.post('/register', async (req, res) => {
     res.redirect('/');
 })
 
-userController.get('/login', async (req, res) => {
+userController.get('/login', isGuest, async (req, res) => {
     res.render('users/login');
 })
 
-userController.post('/login', async (req, res) => {
+userController.post('/login', isGuest, async (req, res) => {
     const { email, password } = req.body;
 
     const token = await userService.login(email, password);
@@ -33,7 +34,7 @@ userController.post('/login', async (req, res) => {
     res.redirect('/');
 })
 
-userController.get('/logout', (req, res) => {
+userController.get('/logout', isAuth, (req, res) => {
     res.clearCookie('auth');
     res.redirect('/');
 })

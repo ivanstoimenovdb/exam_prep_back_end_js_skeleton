@@ -82,6 +82,10 @@ Skeleton for exam - js back-end.
 
 
 ## 9. Authorization.
+- [X] Create isAuth middleware.
+- [X] Create isGuest middleware.
+- [X] Add route guards.
+
 ## 10. Dynamic Content.
 ## 11. Error handling and validation.
 - [ ] Check repeat password.
