@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 import { Schema, model } from "mongoose";
 
 const userSchema = new Schema({
@@ -9,6 +10,10 @@ const userSchema = new Schema({
         type: String,
         required: [true, 'User password is required!'],
     }
+})
+
+userSchema.pre('save', async function() {
+    this.password = await bcrypt.hash(this.password, 12);
 })
 
 const User = model('User', userSchema);

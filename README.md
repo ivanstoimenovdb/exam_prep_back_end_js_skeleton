@@ -34,19 +34,31 @@ Skeleton for exam - js back-end.
 - [X] Config handlebars to work with mongoose documents `runtimeOptions: { allowProtoPropertiesByDefault : true,
                                                                            allowProtoMethodsByDefault: true, }`
 
-## 3. Database.
+## 4. Database.
 - [X] Install mongoose `npm i mongoose`.
 - [X] Connect to DB.
 - [X] Add error handling on connect.
 - [X] Add simple user model.
 
-## 4. Register.
+## 5. Register.
 - [X] Fix navigation links.
-- [ ] Add user controller.
-- [ ] Create register view.
-- [ ] Render register view.
-- [ ] 
-- [ ] 
+- [X] Add user controller.
+- [X] Create register view.
+- [X] Render register view.
+- [X] Modify register form.
+- [X] Create post route for register.
+- [X] Redirect successfull register.
+- [X] Install bcrypt `npm i bcrypt`. 
+- [X] Hash password before safe.
+- [ ]
+
+## 6. Login.
+## 7. Logout.
+## 8. Authentication.
+## 9. Authorization.
+## 10. Dynamic Content.
+## 11. Error handling and validation.
+- [ ]
 
 ## Bonus.
 -[X] Add env variable for debuggin

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ivanstoimenovdb/exam_prep_back_end_js_skeleton#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "mongoose": "^8.19.2"
