@@ -4,12 +4,12 @@ Skeleton for exam - js back-end.
 
 ## TODOs.
 ##  1. Prepare enviremont.
--[X] Initialize project.
--[X] Make module used enviremont.
--[X] Add source (src) table.
--[X] Make dev script.
--[X] Make debug script.
--[X] Add resources.
+- [X] Initialize project.
+- [X] Make module used enviremont.
+- [X] Add source (src) table.
+- [X] Make dev script.
+- [X] Make debug script.
+- [X] Add resources.
 
 ##  2. Express.
 - [X] Install express `npm i express`.
@@ -78,8 +78,6 @@ Skeleton for exam - js back-end.
     - [X] Verify token (clear session if invalid)
     - [X] Attach decoded token to req.user (if token is valid).
 - [X] Use middleware.
-- [ ]
-
 
 ## 9. Authorization.
 - [X] Create isAuth middleware.
