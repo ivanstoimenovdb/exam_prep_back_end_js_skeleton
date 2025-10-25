@@ -3,13 +3,8 @@ import { Router } from "express";
 const homeController = Router();
 
 homeController.get('/', (req, res) => {
-    res.send('It works!');
+    res.render('home');
 });
 
-homeController.post('/', (req, res) =>{
-    res.send('It works!');
-    console.log(req.body);
-    
-});
 
 export default homeController;

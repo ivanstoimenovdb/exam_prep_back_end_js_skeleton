@@ -19,6 +19,26 @@ Skeleton for exam - js back-end.
 - [X] Add controllers.
 - [X] Add route file.
 - [X] Add error controller.
+- [X] Add json parser.
+
+## 3. Handlebars.
+- [X] Install handlebars `npm i express-handlebars`.
+- [X] Config handlebars engine.
+- [X] Set/Use handlebars engine.
+- [X] Set views folder.
+- [X] Add home view.
+- [X] Render home view without layout `res.render('home', { layout: false });`. 
+- [X] Fix asset paths - delete/add uneccessary/neccessary folders from paths.
+- [x] Add layouts and remove `{ layout: false }`.
+- [X] Add partials.
+- [X] Config handlebars to work with mongoose documents `runtimeOptions: { allowProtoPropertiesByDefault : true,
+                                                                           allowProtoMethodsByDefault: true, }`
+
+## 3. Database.
+- [X] Install mongoose `npm i mongoose`.
+- [ ] Connect to DB.
+
+
 
 ## Bonus.
 -[X] Add env variable for debuggin

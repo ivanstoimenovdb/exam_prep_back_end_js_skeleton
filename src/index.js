@@ -1,8 +1,22 @@
 import express from 'express';
+import handlebars from 'express-handlebars';
+
 import routes from './routes.js';
 
 
 const app = express();
+
+// Config handlebars
+app.engine('hbs', handlebars.engine({ 
+        extname : 'hbs',
+    // Allowing handlebars to work with mongoose docs.
+    runtimeOptions: {
+        allowProtoPropertiesByDefault : true,
+        allowProtoMethodsByDefault: true,
+    } } ));
+// Set/use handlebars - view bars engine.
+app.set('view engine', 'hbs');
+app.set('views', 'src/views');
 
 // Add middleware.
 app.use(express.static('src/public'));
@@ -11,7 +25,10 @@ app.use(express.static('src/public'));
 // Add body parser. 
 app.use(express.urlencoded({extended: false}));
 
-// Using routes form routes.js
+// Add json parser.
+// app.use(express.json());
+
+// Using routes form routes.js/ Add routes.
 app.use(routes);
 
 
