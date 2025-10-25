@@ -36,9 +36,17 @@ Skeleton for exam - js back-end.
 
 ## 3. Database.
 - [X] Install mongoose `npm i mongoose`.
-- [ ] Connect to DB.
+- [X] Connect to DB.
+- [X] Add error handling on connect.
+- [X] Add simple user model.
 
-
+## 4. Register.
+- [X] Fix navigation links.
+- [ ] Add user controller.
+- [ ] Create register view.
+- [ ] Render register view.
+- [ ] 
+- [ ] 
 
 ## Bonus.
 -[X] Add env variable for debuggin
