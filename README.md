@@ -104,4 +104,7 @@ Skeleton for exam - js back-end.
 
 ## Bonus.
 - [X] Add env variable for debuggin;
+-   [X] Install `npm i dotenv`.
+-   [X] Create file `.env`, outside of src.
+-   [X] Put `process.env.PORT` in listener.
 - [ ] Use Async jwt;
