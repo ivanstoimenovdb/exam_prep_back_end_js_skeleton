@@ -20,6 +20,7 @@ Skeleton for exam - js back-end.
 - [X] Add route file.
 - [X] Add error controller.
 - [X] Add json parser.
+- [X] Add 404 error.
 
 ## 3. Handlebars.
 - [X] Install handlebars `npm i express-handlebars`.
@@ -95,8 +96,12 @@ Skeleton for exam - js back-end.
 ## 11. Error handling and validation.
 - [X] Add error message in notification.
 - [X] Notification conditional rendering.
-- [ ] Check repeat password.
+- [X] Create getErrorMessage util function.
+- [X] Add error handling for register.
+- [X] Add register form data persistance.
+- [X] Check repeat password.
+- [X] Error handling on loggin.
 
 ## Bonus.
--[X] Add env variable for debuggin;
--[ ] Use Async jwt;
+- [X] Add env variable for debuggin;
+- [ ] Use Async jwt;
