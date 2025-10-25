@@ -12,11 +12,25 @@ userController.get('/register', (req, res) => {
 userController.post('/register', async (req, res) => {
     const { email, password } = req.body;
     
-    const result = await userService.register(email, password);
+    const token = await userService.register(email, password);
 
-    res.redirect('/users/login');
+    res.cookie('auth', token);
 
-    res.end();
+    res.redirect('/');
+})
+
+userController.get('/login', async (req, res) => {
+    res.render('users/login');
+})
+
+userController.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+
+    const token = await userService.login(email, password);
+
+    res.cookie('auth', token);
+    
+    res.redirect('/');
 })
 
 

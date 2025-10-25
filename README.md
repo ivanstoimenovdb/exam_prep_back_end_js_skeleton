@@ -50,15 +50,30 @@ Skeleton for exam - js back-end.
 - [X] Redirect successfull register.
 - [X] Install bcrypt `npm i bcrypt`. 
 - [X] Hash password before safe.
-- [ ]
+- [X] BONUS: Check if user exists.
 
 ## 6. Login.
+- [X] Add login view.
+- [X] Creat get login action.
+- [X] Fix login form. 
+- [X] Add post login action.
+- [X] Validate is user exists.
+- [X] Validate password. 
+- [X] Install jsonwebtoken `npm i jsonwebtoken`
+- [X] Generate token.
+- [X] Call userSevice from userController.
+- [X] Send token as cookie.
+- [X] Redirect to home page.
+- [X] Bonus: Move secret to config file.
+- [X] Auto login on register.
+
 ## 7. Logout.
 ## 8. Authentication.
 ## 9. Authorization.
 ## 10. Dynamic Content.
 ## 11. Error handling and validation.
-- [ ]
+- [ ] Check repeat password.
 
 ## Bonus.
--[X] Add env variable for debuggin
+-[X] Add env variable for debuggin;
+-[ ] Use Async jwt;
