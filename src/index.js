@@ -3,6 +3,8 @@ import handlebars from 'express-handlebars';
 import mongoose from 'mongoose';
 
 import routes from './routes.js';
+import cookieParser from 'cookie-parser';
+import { authMiddleware } from './middlewares/authMiddlewares.js';
 
 
 const app = express();
@@ -35,12 +37,18 @@ app.set('views', 'src/views');
 // Add middleware.
 app.use(express.static('src/public'));
 
+// Add cookie parser.
+app.use(cookieParser());
+
 // Body parser posibility to read html forms in req.body.
 // Add body parser. 
 app.use(express.urlencoded({ extended: false }));
 
 // Add json parser.
 // app.use(express.json());
+
+// Use auth middleware.
+app.use(authMiddleware);
 
 // Using routes form routes.js/ Add routes.
 app.use(routes);

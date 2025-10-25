@@ -68,7 +68,19 @@ Skeleton for exam - js back-end.
 - [X] Auto login on register.
 
 ## 7. Logout.
+- [X] Add logout action.
+- [X] Redirect to home page.
+
 ## 8. Authentication.
+- [X] Install cookie parser - `npm i cookie-parser`.
+- [X] Create auth middleware.
+    - [X] Allow if guest (no token);
+    - [X] Verify token (clear session if invalid)
+    - [X] Attach decoded token to req.user (if token is valid).
+- [X] Use middleware.
+- [ ]
+
+
 ## 9. Authorization.
 ## 10. Dynamic Content.
 ## 11. Error handling and validation.
