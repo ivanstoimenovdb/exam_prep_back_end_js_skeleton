@@ -87,7 +87,16 @@ Skeleton for exam - js back-end.
 - [X] Add route guards.
 
 ## 10. Dynamic Content.
+- [X] Add user data to handlebars context. `authMiddleware.js -> // Add to handlebars context.
+        res.locals.user = decodeToken;
+        res.locals.isAuthenticated = true;`
+- [X] Dynamic navigation. `main.hbs-> logget-in user section {{#if isAuthenticated}} Guest user {{else}} {{/IF}} -> close if`
+- [X] Dynamic title.
+- [X] BONUS: Set page title from view.
+
 ## 11. Error handling and validation.
+- [X] Add error message in notification.
+- [X] Notification conditional rendering.
 - [ ] Check repeat password.
 
 ## Bonus.
